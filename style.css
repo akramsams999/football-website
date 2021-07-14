@@ -1,0 +1,158 @@
+/* fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+    
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+
+/* header */
+header{
+    background-color: rgb(29, 29, 150);
+    color: white;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    justify-content: center;
+    padding: 60px;
+    margin-bottom: 100px;       
+}
+
+.sec-title{
+    font-size: 64px;       
+}
+.live{
+    background-color: rgb(206, 55, 80);
+    width: 120px;
+    border-radius: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+    
+}
+.picture img{
+    width: 556.01px;
+    height: 438px;
+
+}
+.picture:hover{
+    transform: scale(1.2) ;
+    transition: transform 2s ease-in-out;
+}
+
+/* Main Part */
+
+
+/* players details */
+.players{
+    
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin: 10px 150px;
+    justify-content: center;
+    align-items: center;
+    grid-row-gap:30px;
+    grid-column-gap:30px ;
+}
+
+.player{
+    background-color: rgb(250, 246, 246);
+    width: 330px;
+    height: 474px;
+    border: 1px solid rgba(128, 128, 128, 0.021);
+    border-radius: 10px;
+    box-shadow: 2px 2px rgba(128, 128, 128, 0.096);
+    padding: 15px 10px;  
+    text-align: center;
+    
+
+}
+.player-image img{
+    width: 300px;
+    height: 256px;
+    border-radius: 5px;
+    
+}
+.player-details{
+    padding-top: 10px;
+
+}
+.player-name{
+    font-size: 35px;
+    
+}
+.player-info{
+    padding-top: 10px;
+    color:rgb(117, 115, 115);
+}
+
+/* Live Matches */
+
+
+.live-title{
+    font-size: 50px;
+    text-align: center;
+    padding: 100px 0 50px 0;
+    color: rgb(5, 5, 51);
+}
+.live-matches{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+    text-align: center;
+    grid-column-gap:30px ;
+    padding:0 40px;
+    margin: 0 60px ;
+    
+}
+.live-games{
+    background-color:rgb(236, 232, 232);
+    border: 1px solid rgba(128, 128, 128, 0.034);
+    border-radius: 10px;
+    box-shadow: 1px 1px rgba(128, 128, 128, 0.349);
+    padding: 20px;
+    
+}
+.game-image img{
+    width: 467px;
+    height: 327px;
+    border-radius: 5px;
+    cursor: progress;
+}
+
+
+.game-title{
+    font-size: 30px;
+}
+
+/* Match Highlights */
+.highlights-title{
+    font-size: 50px;
+    text-align: center;
+    padding: 150px 0 50px 0;
+    color: rgb(100, 38, 20);
+
+}
+.highlights-matches{
+    
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    justify-content: center;
+    text-align: center;
+    grid-row-gap:30px ;
+    padding: 20px;   
+}
+.highligts-image img{
+    width: 467px;
+    height: 327px;
+    border-radius: 5px;
+    cursor:wait;
+
+}
