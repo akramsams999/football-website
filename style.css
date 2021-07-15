@@ -1,5 +1,7 @@
 /* fonts */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Niconne&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
 
 *{
     margin: 0;
@@ -8,10 +10,6 @@
 body{
     font-family: 'Poppins', sans-serif;
     
-}
-a{
-    text-decoration: none;
-    color: white;
 }
 
 /* header */
@@ -27,11 +25,14 @@ header{
 }
 
 .sec-title{
-    font-size: 64px;       
+    font-size: 64px;  
+    font-weight: 900;     
 }
-.live{
-    background-color: rgb(206, 55, 80);
-    width: 120px;
+.watch-now{
+    background-color: rgb(211, 50, 117);
+    color: white;
+    width: 150px;
+    height: 40px;
     border-radius: 5px;
     padding: 5px 10px;
     cursor: pointer;
@@ -42,7 +43,7 @@ header{
     height: 438px;
 
 }
-.picture:hover{
+.top:hover img{
     transform: scale(1.2) ;
     transition: transform 2s ease-in-out;
 }
@@ -90,7 +91,8 @@ header{
 }
 .player-info{
     padding-top: 10px;
-    color:rgb(117, 115, 115);
+    font-family: 'Poppins', sans-serif;
+    color:rgb(65, 58, 58);
 }
 
 /* Live Matches */
@@ -113,7 +115,7 @@ header{
     
 }
 .live-games{
-    background-color:rgb(236, 232, 232);
+    background-color:rgba(236, 236, 236, 0.397);
     border: 1px solid rgba(128, 128, 128, 0.034);
     border-radius: 10px;
     box-shadow: 1px 1px rgba(128, 128, 128, 0.349);
@@ -149,6 +151,13 @@ header{
     grid-row-gap:30px ;
     padding: 20px;   
 }
+.watch-highlights{
+    background-color:rgba(236, 236, 236, 0.397);
+    border: 1px solid rgba(128, 128, 128, 0.034);
+    border-radius: 10px;
+    box-shadow: 1px 1px rgba(128, 128, 128, 0.349);
+    padding: 20px;
+}
 .highligts-image img{
     width: 467px;
     height: 327px;
@@ -156,3 +165,84 @@ header{
     cursor:wait;
 
 }
+
+/* Main-Part-End */
+
+
+
+/* Footer */
+
+.footer{
+    background-color:rgb(224, 218, 218);
+    margin-top: 200px;
+    padding: 30px 0 30px 0;
+    display: grid;
+    grid-template-rows: repeat(3 1fr);
+    justify-content: center;
+
+}
+
+.first-line{
+    display: flex;
+   align-items: center;
+    
+
+}
+
+.first-line img{
+    width: 140px;
+    height: 110px;
+    margin-right: 20px;
+}
+.footer-title{
+    font-family: 'Niconne', cursive;
+    font-size: 70px;
+    color: rgb(15, 15, 165);
+}
+.second-line{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 30px;
+
+}
+
+
+.fab{
+    
+    margin-right: 20px;
+    color: rgb(54, 48, 48);
+    
+   
+}
+.third-line{
+    justify-content: center;
+    padding:30px 0 0px 80px;
+}
+
+
+/* Media Queries */
+
+/* For Mobile Devices */
+
+@media only screen and (max-width:688px){
+  
+        .top{
+        width: 100%;
+    }
+    .players,.live-matches{
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+/* For Tablet Devices */
+
+@media only screen and (min-width:688px) and (max-width:992px) {
+     .players{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .live-matches{
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+/* Media Queries End */
